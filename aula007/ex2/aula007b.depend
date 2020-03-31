@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1584632096 source:c:\users\mauri\dropbox\faculdade\primeirosemestre\algoritimoseprogramacao1\aulas\aula007b\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
+1584634362 source:c:\users\mauri\dropbox\faculdade\primeirosemestre\algoritimoseprogramacao1\aulas\aula007\ex2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
