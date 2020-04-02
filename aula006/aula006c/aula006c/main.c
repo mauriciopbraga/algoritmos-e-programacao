@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <conio.h>
 
 int main(){
 
@@ -15,16 +16,16 @@ int main(){
     scanf("%d", &idade);
 
     //genero
-    printf("Digite seu gênero: ");
+    printf("Digite seu gÃªnero: ");
     scanf(" %c", &genero);
 
     //salario
-    printf("Digite seu salário: ");
+    printf("Digite seu salÃ¡rio: ");
     scanf("%f", &salario);
 
     system("cls");
 
-    printf("Sua idade é: %d\nSeu gênero é: %c\nSeu salário é: %f", idade, genero, salario);
+    printf("Sua idade Ã©: %d\nSeu gÃªnero Ã©: %c\nSeu salÃ¡rio Ã©: %f", idade, genero, salario);
 
     getch();
     return 0;
