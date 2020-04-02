@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <conio.h>
+
 int main(){
 
     setlocale(LC_ALL, "portuguese");
@@ -6,9 +11,9 @@ int main(){
     int peso = 50;
     char nome = 'M';
 
-    printf("Sua idade �: %d\n", idade);
-    printf("Seu peso �: %dkg\n", peso);
-    printf("Seu nome �: %c\n", nome);
+    wprintf(L"Sua idade é: %d\n", idade);
+    wprintf(L"Seu peso é: %dkg\n", peso);
+    wprintf(L"Seu nome é: %c\n", nome);
 
     getch();
     system("cls");
@@ -17,12 +22,10 @@ int main(){
     peso = 40;
     nome = 'J';
 
-    printf("Sua idade �: %d\n", idade);
-    printf("Seu peso �: %dkg\n", peso);
-    printf("Seu nome �: %c\n", nome);
+    wprintf(L"Sua idade é: %d\n", idade);
+    wprintf(L"Seu peso é: %dkg\n", peso);
+    wprintf(L"Seu nome é: %c\n", nome);
 
     getch();
-
-
     return 0;
 }
