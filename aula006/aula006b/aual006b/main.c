@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <conio.h>
 
 int main(){
 
@@ -14,9 +15,9 @@ int main(){
     char vogal2;
 
     printf("Digite outra vogal: \n");
-    scanf(" %c", &vogal2); //Dar o primeiro espaÁo para
+    scanf(" %c", &vogal2); //Dar o primeiro espa√ßo para
 
-    printf("As vogais digitadas s„o %c e %c\n", vogal, vogal2);
+    printf("As vogais digitadas s√£o %c e %c\n", vogal, vogal2);
 
     getch();
     return 0;
