@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <conio.h>
 
 int main(){
 
@@ -9,13 +8,13 @@ int main(){
 
     int idade;
 
-    wprintf(L"Bem-vindo ao sistema!\n");
+    printf("Bem-vindo ao sistema!\n");
 
-    wprintf(L"Digite sua idade: \n");
-    scanf("%d", &idade); //Intera√ß√£o do usu√°rio
+    printf("Digite sua idade: ");
+    scanf("%d", &idade); //InteraÁ„o do usu·rio
 
-    wprintf(L"A sua idade √©: %d", idade);
+    printf("A sua idade È: %d\n", idade);
 
-    getch();
+    system("pause");
     return 0;
 }

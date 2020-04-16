@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <conio.h>
 
 int main(){
 
@@ -9,18 +8,18 @@ int main(){
 
     int n1, n2, n3, n4;
 
-    wprintf(L"DIGITE QUATRO NÃšMEROS INTEIROS PARA VERIFICAR QUAL Ã‰ A MÃ‰DIA E SE ESSES NÃšMEROS SÃƒO MAIORES QUE ELA.\n\n");
+    printf("DIGITE QUATRO NÚMEROS INTEIROS PARA VERIFICAR QUAL É A MÉDIA E SE ESSES NÚMEROS SÃO MAIORES QUE ELA.\n\n");
 
-    wprintf(L"Primeiro nÃºmero: ");
+    printf("Primeiro número: ");
     scanf("%d", &n1);
 
-    wprintf(L"Segundo nÃºmero: ");
+    printf("Segundo número: ");
     scanf("%d", &n2);
 
-    wprintf(L"Terceiro nÃºmero: ");
+    printf("Terceiro número: ");
     scanf("%d", &n3);
 
-    wprintf(L"Quarto nÃºmero: ");
+    printf("Quarto número: ");
     scanf("%d", &n4);
 
     float media = n1 + n2 + n3 + n4 / 4;
@@ -28,21 +27,21 @@ int main(){
     system("cls");
 
     if(media > n1){
-        wprintf(L"%.2f Ã© maior que %d\n", media, n1);
+        printf("%.2f é maior que %d\n", media, n1);
     }
 
     if(media > n2){
-        wprintf(L"%.2f Ã© maior que %d\n", media, n2);
+        printf("%.2f é maior que %d\n", media, n2);
     }
 
     if(media > n3){
-        wprintf(L"%.2f Ã© maior que %d\n", media, n3);
+        printf("%.2f é maior que %d\n", media, n3);
     }
 
     if(media > n4){
-        wprintf(L"%.2f Ã© maior que %d\n", media, n4);
+        printf("%.2f é maior que %d\n", media, n4);
     }
 
-    getch();
+    system("pause");
     return 0;
 }

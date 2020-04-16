@@ -6,9 +6,9 @@ int main(){
 
     setlocale(LC_ALL, "portuguese");
 
-    /*VariÃ¡veis*/
-    int idade=17;
-    wprintf(L"Idade: %d\n", idade);
+    /*Variáveis*/
+    int idade = 17;
+    printf("Idade: %d\n", idade);
 
     system("pause");
     return 0;

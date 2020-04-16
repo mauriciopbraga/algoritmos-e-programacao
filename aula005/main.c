@@ -6,19 +6,19 @@ int main(){
 
     setlocale(LC_ALL, "portuguese");
 
-    //VÃ¡riaveis
+    //Váriaveis
     int idade = 18;
     float salario = 985.56;
     char genero = 'M';
 
-    wprintf(L"Idade: %d\n", idade);
-    wprintf(L"SalÃ¡rio: %.2f\n", salario); //"%.2f casas depois da vÃ­rgula
-    wprintf(L"GÃªnero: %c\n", genero);
+    printf("Idade: %d\n", idade);
+    printf("Salário: %.2f\n", salario); //"%.2f casas depois da vírgula
+    printf("Gênero: %c\n", genero);
 
     idade = 20;
 
-    wprintf(L"Idade: %d\n", idade);
+    printf("Idade: %d\n", idade);
 
-    system(L"pause");
+    system("pause");
     return 0;
 }

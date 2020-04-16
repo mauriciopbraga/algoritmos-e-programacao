@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <conio.h>
 
 int main(){
 
@@ -9,28 +8,28 @@ int main(){
 
    int n1, n2, n3, maior, menor;
 
-    wprintf(L"DIGITE TRÃŠS NÃšMEROS INTEIROS PARA VERIFICAR QUAL Ã‰ O MAIOR E QUAL Ã‰ O MENOR.\n\n");
+    printf("DIGITE TRÊS NÚMEROS INTEIROS PARA VERIFICAR QUAL É O MAIOR E QUAL É O MENOR.\n\n");
 
-    wprintf(L"Primeiro nÃºmero: ");
+    printf("Primeiro número: ");
     scanf("%d", &n1);
     maior = n1;
     menor = n1;
 
-    wprintf(L"Segundo nÃºmero: ");
+    printf("Segundo número: ");
     scanf(" %d", &n2);
     if(n2 > maior) maior = n2;
     if(n2 < menor) menor = n2;
 
-    wprintf(L"Terceiro nÃºmero: ");
+    printf("Terceiro número: ");
     scanf(" %d", &n3);
     if(n3 > maior) maior = n3;
     if(n3 < menor) menor = n3;
 
     system("cls");
 
-    wprintf(L"O maior valor Ã© %d.\n", maior);
-    wprintf(L"O menor valor Ã© %d.\n", menor);
+    printf("O maior valor é %d.\n", maior);
+    printf("O menor valor é %d.\n", menor);
 
-    getch();
+    system("pause");
     return 0;
 }

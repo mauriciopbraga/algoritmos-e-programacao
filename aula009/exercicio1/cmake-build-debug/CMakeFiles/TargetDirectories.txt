@@ -1,3 +1,0 @@
-C:/Users/mauri/Documents/faculdade/primeirosemestre/algoritimoseprogramacao1/aulas/aula009/exercicio1/cmake-build-debug/CMakeFiles/exercicio1.dir
-C:/Users/mauri/Documents/faculdade/primeirosemestre/algoritimoseprogramacao1/aulas/aula009/exercicio1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/mauri/Documents/faculdade/primeirosemestre/algoritimoseprogramacao1/aulas/aula009/exercicio1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

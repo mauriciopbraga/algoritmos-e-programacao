@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1587009342 source:c:\users\mauri\documents\faculdade\primeirosemestre\algoritimoseprogramacao1\aulas\aula007\ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
