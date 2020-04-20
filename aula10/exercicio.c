@@ -6,20 +6,30 @@ int main(){
 
     setlocale(LC_ALL, "portuguese");
 
-    printf("O programa irá medir sua temperatura para ver se está apto a entrar no estabelecimento\n\n");
+    float nota1, nota2, notaex;
 
-    float temperatura;
+    printf("Digite sua primeira nota: ");
+    scanf("%f", &nota1);
 
-    printf("Digite sua temperatura: ");
-    scanf("%f", &temperatura);
+    printf("\nDigite sua segunda nota: ");
+    scanf("%f", &nota2);
 
-    system("cls");
+    float media = (nota1 + nota2) / 2;
 
-    if(temperatura >= 38){
-        printf("Sua temperatura está fora dos padrões permitidos\n\n");
+    if(media >= 6){
+        printf("\nVocê foi aprovado. Sua primeira nota é %.2f, sua segunda nota é %.2f e sua média é %.2f\n\n", nota1, nota2, media);
     }
     else{
-        printf("Sua temperatura está normal\n\n");
+        printf("\nVocê não alcançou a média. Digite a nota do exame: ");
+        scanf("%f", &notaex);
+
+        if(notaex >= 5){
+        printf("\nVocê foi aprovado\n\n");
+        }
+
+    else{
+        printf("\nVocê foi reprovado\n\n");
+    }
     }
 
     system("pause");
