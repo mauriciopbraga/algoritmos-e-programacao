@@ -1,3 +1,7 @@
+/*Propagama para monitorar temperatura e umidade de um leito no hospital
+
+Faixa normal de operação (temp) = 23°C e 25°C
+Faixa normal de operação (umid) = 70% e 90%*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -6,31 +10,25 @@ int main(){
 
     setlocale(LC_ALL, "portuguese");
 
-    float nota1, nota2, notaex;
+    printf("PROGRAMA PARA MONITORAR A TEMPERATURA E UMIDADE DE UM LEITO DE HOSPITAL\n\n");
 
-    printf("Digite sua primeira nota: ");
-    scanf("%f", &nota1);
+    float temp, umid;
 
-    printf("\nDigite sua segunda nota: ");
-    scanf("%f", &nota2);
+    printf("Digite a temperatura do quarto: ");
+    scanf("%f", &temp);
 
-    float media = (nota1 + nota2) / 2;
+    fflush(stdin);
 
-    if(media >= 6){
-        printf("\nVocê foi aprovado. Sua primeira nota é %.2f, sua segunda nota é %.2f e sua média é %.2f\n\n", nota1, nota2, media);
+    printf("\nDigite a umidade do quarto: ");
+    scanf("%f", &umid);
+
+    if((temp >= 23) && (temp <= 25) && (umid >= 70) && (umid <= 90)){
+        printf("\nA temperatura e umidade do quarto estão ok\n");
+
+        return 0;
     }
-    else{
-        printf("\nVocê não alcançou a média. Digite a nota do exame: ");
-        scanf("%f", &notaex);
 
-        if(notaex >= 5){
-        printf("\nVocê foi aprovado\n\n");
-        }
-
-    else{
-        printf("\nVocê foi reprovado\n\n");
-    }
-    }
+    printf("\nO a temperatura e umidade do quarto não estão boas\n\n");
 
     system("pause");
     return 0;
