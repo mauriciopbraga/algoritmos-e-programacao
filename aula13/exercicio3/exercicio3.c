@@ -52,8 +52,8 @@ int main(){
     renda = salariom + salariop;
     despesas = agua + luz + tel + cond + mens + saude + aliment + vest + transp + seg;
 
-    printf("A renda familiar é de %.2f\n\n", renda);
-    printf("O total gastos em despesas é de %.2f\n\n", despesas);
+    printf("A renda familiar é de R$ %.2f\n\n", renda);
+    printf("O total gastos em despesas é de R$ %.2f\n\n", despesas);
 
     if(renda > despesas){
         printf("O saldo é positivo\n\n");
