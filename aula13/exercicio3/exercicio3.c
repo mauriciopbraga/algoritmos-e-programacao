@@ -19,7 +19,7 @@ int main(){
     //Receitas
     float salariop, salariom, renda;
 
-    //Dispesas
+    //Despesas
     float agua, luz, tel, cond, mens, saude, aliment, vest, transp, seg, despesas;
 
     printf("Qual o salário da mãe? ");
