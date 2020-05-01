@@ -1,12 +1,12 @@
-/*Uma família deseja informatizar suas despesas domésticas, pois seu filho está cursando Ciência da Computação.
-Para o cálculo, as despesas da família são: água, luz, telefone,
-condomínio, mensalidade, saúde, alimentação, vestuário, transporte e segurança.
-As receitas são o salário do pai e o salário da mãe. Desenvolva um algoritmo
-para ler as receitas e despesas, calcular a renda total da família, calcular o total
-de despesas e o saldo (receitas – despesas). O programa deve mostrar ao usuário todos estes dados.
+/*Uma famÃ­lia deseja informatizar suas despesas domÃ©sticas, pois seu filho estÃ¡ cursando CiÃªncia da ComputaÃ§Ã£o.
+Para o cÃ¡lculo, as despesas da famÃ­lia sÃ£o: Ã¡gua, luz, telefone,
+condomÃ­nio, mensalidade, saÃºde, alimentaÃ§Ã£o, vestuÃ¡rio, transporte e seguranÃ§a.
+As receitas sÃ£o o salÃ¡rio do pai e o salÃ¡rio da mÃ£e. Desenvolva um algoritmo
+para ler as receitas e despesas, calcular a renda total da famÃ­lia, calcular o total
+de despesas e o saldo (receitas â€“ despesas). O programa deve mostrar ao usuÃ¡rio todos estes dados.
 Ao lado do saldo, deve mostrar a mensagem conforme o valor: se o saldo for positivo,
-mostrar a mensagem “Saldo Positivo”; se o saldo for negativo, mostrar a mensagem “Saldo Negativo”;
-se o saldo for zero, mostrar a mensagem “Saldo Nulo”.*/
+mostrar a mensagem â€œSaldo Positivoâ€; se o saldo for negativo, mostrar a mensagem â€œSaldo Negativoâ€;
+se o saldo for zero, mostrar a mensagem â€œSaldo Nuloâ€.*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,29 +22,29 @@ int main(){
     //Despesas
     float agua, luz, tel, cond, mens, saude, aliment, vest, transp, seg, despesas;
 
-    printf("Qual o salário da mãe? ");
+    printf("Qual o salÃ¡rio da mÃ£e? ");
     scanf("%f", &salariom);
-    printf("Qual o salário do pai? ");
+    printf("Qual o salÃ¡rio do pai? ");
     scanf("%f", &salariop);
-    printf("Total gasto com água? ");
+    printf("Total gasto com Ã¡gua? ");
     scanf("%f", &agua);
     printf("Total gasto com luz? ");
     scanf("%f", &luz);
     printf("Total gasto com telefone? ");
     scanf("%f", &tel);
-    printf("Total gasto com condomínio? ");
+    printf("Total gasto com condomÃ­nio? ");
     scanf("%f", &cond);
     printf("Total gasto com mensalidade? ");
     scanf("%f", &mens);
-    printf("Total gasto com saúde? ");
+    printf("Total gasto com saÃºde? ");
     scanf("%f", &saude);
-    printf("Total gasto com alimentação? ");
+    printf("Total gasto com alimentaÃ§Ã£o? ");
     scanf("%f", &aliment);
-    printf("Total gasto com vestuário? ");
+    printf("Total gasto com vestuÃ¡rio? ");
     scanf("%f", &vest);
     printf("Total gasto com transporte? ");
     scanf("%f", &transp);
-    printf("Total gasto com segurança? ");
+    printf("Total gasto com seguranÃ§a? ");
     scanf("%f", &seg);
 
     system("cls");
@@ -52,17 +52,17 @@ int main(){
     renda = salariom + salariop;
     despesas = agua + luz + tel + cond + mens + saude + aliment + vest + transp + seg;
 
-    printf("A renda familiar é de R$ %.2f\n\n", renda);
-    printf("O total gastos em despesas é de R$ %.2f\n\n", despesas);
+    printf("A renda familiar Ã© de R$ %.2f\n\n", renda);
+    printf("O total gastos em despesas Ã© de R$ %.2f\n\n", despesas);
 
     if(renda > despesas){
-        printf("O saldo é positivo\n\n");
+        printf("O saldo Ã© positivo\n\n");
     }
-    else if(renda = 0){
-        printf("O saldo é nulo\n\n");
+    else if(renda == 0){
+        printf("O saldo Ã© nulo\n\n");
     }
     else{
-        printf("O saldo é negativo\n\n");
+        printf("O saldo Ã© negativo\n\n");
     }
 
     system("pause");
