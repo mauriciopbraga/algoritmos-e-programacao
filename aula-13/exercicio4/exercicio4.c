@@ -1,4 +1,11 @@
-//Exercício do INSS
+/*Escreva um algoritmo para ler o salário mensal de um funcionário e calcule o desconto do INSS, levando em consideração a tabela abaixo:
+
+
+Salário / Alíquota
+
+até R$ 1.200,00 / 8,00 %
+de R$ 1.200,01 a R$ 2.300,00 / 9,00 %
+A partir de R$ 2.300,01 / 11,00 %*/
 
 #include <stdio.h>
 #include <stdlib.h>
