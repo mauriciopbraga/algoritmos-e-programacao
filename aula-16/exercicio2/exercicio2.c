@@ -1,3 +1,5 @@
+/*Escrever um algoritmo de calculadora. O algoritmo deve ter solicitar ao usuário 2 valores e uma das operações desejadas para o cálculo (+, -, *, /). De acordo com a operação desejada, o algoritmo realiza o cálculo e exibe na tela o resultado somente daquela conta específica.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
