@@ -29,19 +29,19 @@ int main(){
     if(imc < 18.5){
         printf("Você está abaixo do peso\n");
     }
-    else if(imc >= 18.5){
+    else if(imc <= 18.5){
         printf("Você está com o peso normal\n");
     }
-    else if(imc >= 25){
+    else if(imc <= 25){
         printf("Você está com sobrepeso\n");
     }
-    else if(imc >= 30){
+    else if(imc <= 30){
         printf("Você está com obesidade de primeiro grau\n");
     }
-    else if(imc >= 35){
+    else if(imc <= 35){
         printf("Você está com obesidade de segundo grau\n");
     }
-    else if(imc >= 40){
+    else if(imc <= 40){
         printf("Você está com obesidade de terceiro grau\n");
     }
     
