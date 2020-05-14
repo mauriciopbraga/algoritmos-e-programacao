@@ -1,3 +1,5 @@
+//Escrever um algoritmo capaz de ler as letras/teclas do teclado e identificar se a letra/tecla é ou não uma vogal.
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <locale.h>
