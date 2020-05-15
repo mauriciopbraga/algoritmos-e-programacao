@@ -10,33 +10,33 @@ int main(){
 
     char vogal;
 
-    printf("Digite uma vogal: ");
+    printf("Digite uma letra: ");
     scanf("%c", &vogal);
 
     switch(vogal){
         case 'a':
             printf("É vogal\n");
-            break;
+        break;
 
         case 'e':
             printf("É vogal\n");
-            break;
+        break;
 
         case 'i':
             printf("É vogal\n");
-            break;
+        break;
 
         case 'o':
             printf("É vogal\n");
-            break;
+        break;
 
         case 'u':
             printf("É vogal\n");
-            break;
+        break;
 
         default:
             printf("Não é uma vogal\n");
-            break;
+        break;
     }
 
     system("pause");
