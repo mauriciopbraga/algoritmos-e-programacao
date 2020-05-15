@@ -11,21 +11,15 @@ int main(){
     setlocale(LC_ALL, "portuguese");
 
     printf("CALCULADORA\n\n");
-    printf("1 - Adição\n");
-    printf("2 - Subtração\n");
-    printf("3 - Multiplicação\n");
-    printf("4 - Divisão\n");
+    printf("+ - Adição\n");
+    printf("- - Subtração\n");
+    printf("* - Multiplicação\n");
+    printf("/ - Divisão\n");
 
-    int opcao;
+    char opcao;
 
     printf("\nSelecione a opção para definir a operação: ");\
-    scanf("%d", &opcao);
-
-    if(opcao > 4){
-        system("cls");
-
-        printf("Nenhuma das opções foi selecionada.");
-    }
+    scanf("%c", &opcao);
 
     float n1, n2, total;
 
@@ -37,25 +31,25 @@ int main(){
     system("cls");
 
     switch(opcao){
-        case 1:
+        case '+':
             total = n1 + n2;
             printf("%.1f + %.1f = %.1f\n", n1, n2, total);
-            break;
+        break;
 
-        case 2:
+        case '-':
             total = n1 - n2;
             printf("%.1f - %.1f = %.1f\n", n1, n2, total);
-            break;
+        break;
 
-        case 3:
+        case '*':
             total = n1 * n2;
             printf("%.1f * %.1f = %.1f\n", n1, n2, total);
-            break;
+        break;
 
-        case 4:
+        case '/':
             total = n1 / n2;
             printf("%.1f / %.1f = %.1f\n", n1, n2, total);
-            break;
+        break;
     }
 
     system("pause");
