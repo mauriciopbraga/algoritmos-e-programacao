@@ -36,7 +36,6 @@ int main(){
 
         default:
             printf("Não é uma vogal\n");
-        break;
     }
 
     system("pause");
