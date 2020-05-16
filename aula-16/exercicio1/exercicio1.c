@@ -1,4 +1,4 @@
-//Escrever um algoritmo capaz de ler as letras/teclas do teclado e identificar se a letra/tecla é ou não uma vogal.
+//Escrever um algoritmo capaz de ler as letras/teclas do teclado e identificar se a letra/tecla é ou não uma vogal
 
 #include <stdio.h>
 #include <stdlib.h>
