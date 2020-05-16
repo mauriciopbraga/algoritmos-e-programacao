@@ -1,4 +1,7 @@
-/*Escrever um algoritmo para oferecer ao usuário a possibilidade de calcular a velocidade média, a distância percorrida e/ou o tempo gasto. Sempre que o usuário escolher uma das opções, deverá informar ao sistema as outras duas informações. Exemplo: caso o usuário escolha saber a velocidade média, ele precisará informar o tempo e a distância percorrida, para a aplicação da fórmula e a exibição do resultado.*/
+/*Escrever um algoritmo para oferecer ao usuário a possibilidade de calcular a velocidade média, a distância percorrida e/ou o tempo gasto.
+Sempre que o usuário escolher uma das opções, deverá informar ao sistema as outras duas informações.
+Exemplo: caso o usuário escolha saber a velocidade média, ele precisará informar o tempo e a distância percorrida,
+para a aplicação da fórmula e a exibição do resultado.*/
 
 #include <stdio.h>
 #include <stdlib.h>
