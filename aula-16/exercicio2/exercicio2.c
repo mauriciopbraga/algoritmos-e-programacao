@@ -19,7 +19,7 @@ int main(){
     char opcao;
 
     printf("\nSelecione a opção para definir a operação: ");\
-    scanf("%c", &opcao);
+    scanf("%s", &opcao);
 
     float n1, n2, total;
 
