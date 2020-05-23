@@ -1,4 +1,4 @@
-//Desenvolver um algoritmo para ler um nu?mero menor que 1000, calcular e mostrar todos os nu?meros i?mpares maiores que o nu?mero lido e menores que 1000
+//Desenvolver um algoritmo para ler um número menor que 1000, calcular e mostrar todos os números ímpares maiores que o número lido e menores que 1000
 
 #include <stdio.h>
 #include <stdlib.h>
