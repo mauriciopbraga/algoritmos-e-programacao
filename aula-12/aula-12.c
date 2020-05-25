@@ -17,7 +17,7 @@ int main(){
 
     fflush(stdin);
 
-    printf("Digite 1 - Soma, 2 - Subtra��o, 3 - Multiplica��o, 4 - divis�o: ");
+    printf("Digite 1 - Soma, 2 - Subtração, 3 - Multiplicação, 4 - divisão: ");
     scanf("%d", &opcao);
 
     if(opcao == 1){
@@ -37,9 +37,8 @@ int main(){
             printf("%.1f / %.1f = %.1f\n\n", valor1, valor2, result);
     }
     else{
-        printf("Nenhuma das op��es foi selecionada\n\n");
+        printf("Nenhuma das opções foi selecionada\n\n");
     }
 
-    system("pause");
     return 0;
 }
