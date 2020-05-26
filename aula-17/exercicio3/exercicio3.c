@@ -1,1 +1,1 @@
-//Ler dois nuÌmeros e calcular o somatoÌrio dos nuÌmeros do intervalo (incluindo, no somatÃ³rio, os nÃºmeros lidos)
+//Ler dois números e calcular o somatório dos números do intervalo (incluindo, no somatório, os números lidos)
