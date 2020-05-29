@@ -1,6 +1,5 @@
 //Tipos de triângulos
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
 
 int main(){
@@ -30,7 +29,5 @@ int main(){
               printf("Não é um triângulo\n");
           }
     }
-
-    system("pause");
     return 0;
 }
