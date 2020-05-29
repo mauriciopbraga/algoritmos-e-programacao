@@ -1,5 +1,7 @@
+/*Fazer um programa para ler duas notas, calcular a média entre as duas. Caso o aluno não tenha alcançado a média 6 deverá ser direcionado ao exame e caso essa nota
+seja menor que 5 exibir que o aluno está reprovado*/
+
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
 
 int main(){
@@ -31,7 +33,5 @@ int main(){
         printf("\nVocê foi reprovado\n\n");
     }
     }
-
-    system("pause");
     return 0;
 }
