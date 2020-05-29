@@ -1,3 +1,5 @@
+//Ler quatro números inteiros, calcular a média aritmética entre eles e exibir se os números digitados são maiores qque a média
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
