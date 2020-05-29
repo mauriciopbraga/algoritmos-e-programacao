@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
 
 int main(){
@@ -12,6 +11,5 @@ int main(){
     total=numero1+numero2;
     printf("Conta realizada %d + %d = %d\n", numero1, numero2, total);
 
-    system("pause");
     return 0;
 }
