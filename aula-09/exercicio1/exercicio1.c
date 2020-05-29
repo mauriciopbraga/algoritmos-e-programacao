@@ -1,3 +1,5 @@
+// Ler três números e mostrar qual deles é o maior e menor utilizando if
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
