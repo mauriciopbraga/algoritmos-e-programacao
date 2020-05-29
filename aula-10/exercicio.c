@@ -3,7 +3,6 @@
 Faixa normal de operação (temp) = 23°C e 25°C
 Faixa normal de operação (umid) = 70% e 90%*/
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
 
 int main(){
@@ -30,6 +29,5 @@ int main(){
 
     printf("\nO a temperatura e umidade do quarto não estão boas\n\n");
 
-    system("pause");
     return 0;
 }
