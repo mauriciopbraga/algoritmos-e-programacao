@@ -1,4 +1,4 @@
-//Construir um algoritmo para ler um valor numérico e calcular e escrever o seu fatorial
+//Construir um algoritmo para ler um valor numï¿½rico e calcular e escrever o seu fatorial
 
 #include <stdio.h>
 
@@ -13,7 +13,7 @@ int main(){
 
     printf("%d! = ", num);
 
-    while( i > 0){
+    while(i > 0){
         printf("%d ", i);
         fatorial = fatorial * i--;
 
