@@ -2,6 +2,7 @@
 //Timer / Cronômetro
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <windows.h> //Biblioteca para usar o comando Sleep
 
 int main(){
