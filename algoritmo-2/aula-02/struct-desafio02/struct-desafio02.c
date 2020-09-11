@@ -4,7 +4,6 @@ Dessa forma, solicitar ao usuário qual tipo de veículo ele deseja cadastrar e 
 #include <stdio.h>
 
 struct veiculo{
-
   char tipo[50], marca[50], modelo[50];
   float valor;
 };
