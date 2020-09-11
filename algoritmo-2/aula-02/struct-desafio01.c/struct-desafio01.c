@@ -1,4 +1,4 @@
-/* criar uma estrutura chamada calculadora que contenha 2 valores do tipo float. Solicitar ao usuário que digite dois valores quaisquer;
+/* Criar uma estrutura chamada calculadora que contenha 2 valores do tipo float. Solicitar ao usuário que digite dois valores quaisquer;
 Realizar o cálculo das quatro operações aritméticas básicas entre esses dois valores lidos e exibir as respostas na tela do computador */
 
 #include <stdio.h>
