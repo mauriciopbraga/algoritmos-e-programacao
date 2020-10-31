@@ -7,9 +7,11 @@ void calculadora(float n1, float n2){
     printf("\n%.2f + %.2f = %.2f\n", n1, n2, n1 + n2);
     printf("%.2f - %.2f = %.2f\n", n1, n2, n1 - n2);
     printf("%.2f * %.2f = %.2f\n", n1, n2, n1 * n2);
-    printf("%.2f * %.2f = %.2f\n", n1, n2, n1 * n2);
+    printf("%.2f / %.2f = %.2f\n", n1, n2, n1 / n2);
 }
-void main(float n1, float n2){
+void main(void){
+    float n1, n2;
+
     printf("Numero: ");
     scanf("%f", &n1);
     printf("Numero: ");
