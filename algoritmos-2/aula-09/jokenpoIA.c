@@ -90,11 +90,25 @@ void iniciarJogo(){
 void main(){
 	nomeUsuario();
 
-    while(1){
+    while((pontosUsuario + pontosIA) < 3){
         iniciarJogo();
         gerarNumeroIA();
         jogadas();
+
         Sleep(2000);
         system("cls");
+
+		if(pontosUsuario >= 2){
+			printf("%s venceu a melhor de 3!\n\n", nome);
+			printf("Pontos %s = %d\n", nome, pontosUsuario);
+			printf("Pontos Prompt = %d\n\n", pontosIA);
+			exit(0);
+		}
+		 else if(pontosIA >= 2){
+			printf("Prompt venceu a melhor de 3!\n");
+			printf("Pontos Prompt = %d\n\n", pontosIA);
+			printf("Pontos %s = %d\n", nome, pontosUsuario);
+			exit(0);
+		}
     }
 }
