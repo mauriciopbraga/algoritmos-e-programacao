@@ -23,8 +23,8 @@ void nomes(){
 void entrada(){
 	printf("\n%s escolha: ", nomeJogador1);
 	scanf("%d", &jogadaJogador1);
-    
-    printf("\n%s Jogador 2 escolha: ", nomeJogador2);
+
+    printf("\n%s escolha: ", nomeJogador2);
 	scanf("%d", &jogadaJogador2);
 }
 
