@@ -42,12 +42,12 @@ void jogadas() {
 		printf("Empate!\n\n");
 	}
     if(jogadaJogador1 == 1 && jogadaJogador2 == 3){
-		printf("\n%s jogou pedra X %s Prompt tesoura\n\n", nomeJogador1, nomeJogador2);
+		printf("\n%s jogou pedra X %s tesoura\n\n", nomeJogador1, nomeJogador2);
 		printf("%s ganhou! | %s perdeu!\n\n", nomeJogador1, nomeJogador2);
 		pontosJogador1++;
 	}
     if(jogadaJogador1 == 2 && jogadaJogador2 == 3){
-		printf("\n%s jogou pedra X %s Prompt tesoura\n\n", nomeJogador1, nomeJogador2);
+		printf("\n%s jogou pedra X %s tesoura\n\n", nomeJogador1, nomeJogador2);
 		printf("%s ganhou! | %s perdeu!\n\n", nomeJogador1, nomeJogador2);
 		pontosJogador1++;
 	}
@@ -100,11 +100,11 @@ void main(){
 		if(pontosJogador1 >= 2){
 			printf("%s venceu a melhor de 3!\n\n", nomeJogador1);
 			printf("Pontos %s = %d\n", nomeJogador1, pontosJogador1);
-			printf("Pontos %s = %d\n\n", pontosJogador2);
+			printf("Pontos %s = %d\n\n", nomeJogador2, pontosJogador2);
 			exit(0);
 		}
 		 else if(pontosJogador2 >= 2){
-			printf("%s venceu a melhor de 3!\n", nomeJogador2);
+			printf("%s venceu a melhor de 3!\n\n", nomeJogador2);
 			printf("Pontos %s = %d\n\n", nomeJogador2, pontosJogador2);
 			printf("Pontos %s = %d\n", nomeJogador1, pontosJogador1);
 			exit(0);
