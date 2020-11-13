@@ -41,12 +41,12 @@ void jogadas() {
 		printf("Empate!\n\n");
 	}
     if(jogadaUsuario == 1 && jogadaIA == 3){
-		printf("\n%s jogou pedra X AVA Prompt tesoura\n\n", nome);
+		printf("\n%s jogou pedra X Prompt tesoura\n\n", nome);
 		printf("%s ganhou!\n\n", nome);
 		pontosUsuario++;
 	}
     if(jogadaUsuario == 2 && jogadaIA == 3){
-		printf("\n%s jogou pedra X AVA Prompt tesoura\n\n", nome);
+		printf("\n%s jogou pedra X Prompt tesoura\n\n", nome);
 		printf("%s ganhou!\n\n", nome);
 		pontosUsuario++;
 	}
