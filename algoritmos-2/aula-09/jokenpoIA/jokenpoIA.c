@@ -83,7 +83,6 @@ void iniciarJogo(){
 	while(jogadaUsuario < 1 || jogadaUsuario > 3){
 		printf("OPA! Parece que esse numero nao eh valido!\n");
 		entrada();
-		scanf("%d", &jogadaUsuario);
 	}	
 } 
 
