@@ -42,17 +42,21 @@ void votacao(){
 }
 
 void apuracao(){
+    float porcentagemCandidatoA = (votosCandidatoA / (votosCandidatoA + votosCandidatoB + votosNulos)) * 100;
+    float porcentagemCanddatoB = (votosCandidatoB / (votosCandidatoA + votosCandidatoB + votosNulos)) * 100;
+    float porcentagemNulos = (votosNulos / (votosCandidatoA + votosCandidatoB + votosNulos)) * 100;
+
     printf("Apuracao dos votos\n\n");
-    printf("Votos candidato A: %.0f\n", votosCandidatoA);
-    printf("Votos candidato B: %.0f\n", votosCandidatoB);
-    printf("Votos nulos: %.0f\n\n", votosNulos);
+    printf("Votos candidato A: %.0f (%.1f%%)\n", votosCandidatoA, porcentagemCandidatoA);
+    printf("Votos candidato B: %.0f (%.1f%%)\n", votosCandidatoB, porcentagemCanddatoB);
+    printf("Votos nulos: %.0f (%.1f%%)\n\n", votosNulos, porcentagemNulos);
 
     if(votosCandidatoA > votosCandidatoB){
-        printf("Candidato A ganhou com %.1f%% dos votos\n", votosCandidatoA = (votosCandidatoA / (votosCandidatoA + votosCandidatoB + votosNulos)) * 100);
+        printf("Candidato A ganhou com %.1f%% dos votos\n", porcentagemCandidatoA);
         exit(0);
     }
     if(votosCandidatoA < votosCandidatoB){
-        printf("Candidato B ganhou com %1.f%% dos votos\n", votosCandidatoB = (votosCandidatoB / (votosCandidatoA + votosCandidatoB + votosNulos)) * 100);
+        printf("Candidato B ganhou com %.1f%% dos votos\n", porcentagemCanddatoB);
         exit(0);
     }
     if(votosCandidatoA == votosCandidatoB && votosCandidatoA != 0 && votosCandidatoB != 0){
@@ -61,7 +65,7 @@ void apuracao(){
         votacao();
     }
     if(votosNulos > votosCandidatoA && votosNulos > votosCandidatoB){
-        printf("%.1f%% dos votos foram nulos. Votacao cancelada\n", votosNulos = (votosNulos / (votosCandidatoA + votosCandidatoB + votosNulos)) * 100);
+        printf("%.1f%% dos votos foram nulos. Votacao cancelada\n", porcentagemNulos);
         exit(0);
     }
 }
@@ -75,7 +79,13 @@ void menuInicial(){
         votacao();
     }
     if(opcao == 2){
-        apuracao();
+        if(votosCandidatoA > 0 || votosCandidatoB > 0 || votosNulos > 0){
+            apuracao();
+        }
+        else{
+            printf("Nao ha dados suficientes para a apuracao\n\n");
+            entrada();
+        }
     }
     while(opcao < 1 || opcao > 2){
         printf("\nOpcao invalida\n");
