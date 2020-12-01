@@ -51,16 +51,16 @@ void apuracao(){
     printf("Votos candidato B: %.0f (%.1f%%)\n", votosCandidatoB, porcentagemCanddatoB);
     printf("Votos nulos: %.0f (%.1f%%)\n\n", votosNulos, porcentagemNulos);
 
-    if(votosCandidatoA > votosCandidatoB){
+    if(votosCandidatoA > votosCandidatoB && votosCandidatoA > votosNulos){
         printf("Candidato A ganhou com %.1f%% dos votos\n", porcentagemCandidatoA);
         exit(0);
     }
-    if(votosCandidatoA < votosCandidatoB){
+    if(votosCandidatoA < votosCandidatoB && votosCandidatoB > votosNulos){
         printf("Candidato B ganhou com %.1f%% dos votos\n", porcentagemCanddatoB);
         exit(0);
     }
-    if(votosCandidatoA == votosCandidatoB && votosCandidatoA != 0 && votosCandidatoB != 0){
-        printf("Cada candidato teve 50%% dos votos. Eh necessario um segundo turno\n");
+    if(votosCandidatoA == votosCandidatoB && votosCandidatoA != 0 && votosCandidatoB != 0 || votosCandidatoA == votosNulos || votosCandidatoB == votosNulos){
+        printf("Cada candidato teve metade dos votos. Eh necessario um segundo turno\n");
         separador();
         votacao();
     }
@@ -83,13 +83,13 @@ void menuInicial(){
             apuracao();
         }
         else{
-            printf("Nao ha dados suficientes para a apuracao\n\n");
-            entrada();
+            return menuInicial();
         }
     }
     while(opcao < 1 || opcao > 2){
-        printf("\nOpcao invalida\n");
-        entrada();
+        printf("Opcao invalida. Tente novamente!\n");
+        separador();
+        return menuInicial();
     }
 }
 
