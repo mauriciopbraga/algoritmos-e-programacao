@@ -20,7 +20,6 @@ void entrada(){
 
 void votacao(){
     printf("Colinha: [1] Candidato A | [2] Candidato B\n\n"); 
-
     printf("Digite o numero que representa seu candidato: ");
     scanf("%d", &numeroCandidato);
 
@@ -83,6 +82,8 @@ void menuInicial(){
             apuracao();
         }
         else{
+            printf("Nao existem votos para serem apurados!\n");
+            separador();
             return menuInicial();
         }
     }
