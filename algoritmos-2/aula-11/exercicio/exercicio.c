@@ -4,6 +4,11 @@ efetuar a leitura do log quando o usuário desejar/informar um código de recupe
 #include <stdio.h>
 
 float n1, n2;
+int opcao;
+
+void separador(){
+    printf("\n-----------------------------------------------------\n\n");
+}
 
 void calculadora(float n1, float n2){
     printf("\n%.2f + %.2f = %.2f\n", n1, n2, n1 + n2);
@@ -14,7 +19,6 @@ void calculadora(float n1, float n2){
 
 void calcLog(){
     FILE *logs;
-
     logs = fopen("logs.txt", "a");
 
     fprintf(logs, "%.2f + %.2f = %.2f\n", n1, n2, n1 + n2);
@@ -24,13 +28,38 @@ void calcLog(){
     fclose(logs);
 }
 
+void menu(){
+    printf("[1] Calculadora | [2] Gerar registros\n\n");
+
+    printf("Digite uma opcao: ");
+    scanf("%d", &opcao);
+
+    separador();
+
+    if(opcao == 1){
+        printf("Numero: ");
+        scanf("%f", &n1);
+        printf("Numero: ");
+        scanf("%f", &n2);
+
+        calculadora(n1, n2);
+
+        separador();
+    }
+    if(opcao == 2){
+        printf("Os registros foram gerados no arquivo logs.txt\n");
+        calcLog();
+        separador();
+    }
+    while(opcao < 1 || opcao > 2){
+        printf("Opcao nao existente!\n");
+        return menu();
+        separador();
+    }
+}
+
 void main(){
-    printf("Numero: ");
-    scanf("%f", &n1);
-    printf("Numero: ");
-    scanf("%f", &n2);
-
-    calculadora(n1, n2);
-
-    calcLog();
+    while(1){
+        menu();
+    }
 }
